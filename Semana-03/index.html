@@ -61,22 +61,24 @@
                         Trackgenix
                     </h2>
                 </div>
-                <div>
+                <span>
                     <img src="assets/icon-dialog.svg" alt="Dialog icon">
-                </div>
+                </span>
             </div>
             <article>
                 <div class="box-text-below">
                     <img src="assets/softdev1.jpg" alt="Softdev1">
-                    <h3>
-                        Keep a good working-life balance
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ut odio dolorum odit quidem iure 
-                        adipisci voluptates mollitia, nobis provident placeat velit quae labore nihil cum voluptate quas. 
-                        Repudiandae, reprehenderit?
-                    </p>
-                    <button>Read more</button>
+                    <div>
+                        <h3>
+                            Keep a good working-life balance
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ut odio dolorum odit quidem iure 
+                            adipisci voluptates mollitia, nobis provident placeat velit quae labore nihil cum voluptate quas. 
+                            Repudiandae, reprehenderit?
+                        </p>
+                        <button>Read more</button>
+                    </div>
                 </div>
                 <div class="box-text-right">
                     <img src="assets/softdev1b.jpg" alt="Softdev1b">
@@ -113,7 +115,7 @@
                         Our trajectory in the software world since 2019
                     </h3>
                 </div>
-                <div class="box-text-left">
+                <div class="box-text-left-bigimage">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est eveniet optio autem libero aliquam.
                         Similique tempora perferendis doloremque deserunt tempore natus, dolor distinctio reprehenderit illum
@@ -131,7 +133,7 @@
                         Work with us!
                     </h3>
                 </div>
-                <div class="box-text">
+                <div class="inline-box-text">
                     <img src="assets/icon-laptop-code.svg" alt="Laptop code icon">
                     <div>
                         <h4>
@@ -142,7 +144,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="box-text">
+                <div class="inline-box-text">
                     <img src="assets/icon-progress.svg" alt="Progress icon">
                     <div>
                         <h4>
@@ -153,7 +155,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="box-text">
+                <div class="inline-box-text">
                     <img src="assets/icon-teams.svg" alt="Teams icon">
                     <div>
                         <h4>
@@ -164,7 +166,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="box-text">
+                <div class="inline-box-text">
                     <img src="assets/icon-list-task.svg" alt="List task icon">
                     <div>
                         <h4>
@@ -177,26 +179,26 @@
                 </div>
             </section>
             <section>
-                <div>
                     <h3>
                         Functions
                     </h3>
-                    <img src="assets/softdev3.jpg" alt="Softdev3">
-                    <ol>
-                        <li>
-                            Record of hours
-                        </li>
-                        <li>
-                            Reports
-                        </li>
-                        <li>
-                            Resource Management
-                        </li>
-                        <li>
-                            Multiple roles
-                        </li>
-                    </ol>
-                </div>
+                    <div class="box-text-right-bigimage">
+                        <img src="assets/softdev3.jpg" alt="Softdev3">
+                        <ol>
+                            <li>
+                                Record of hours
+                            </li>
+                            <li>
+                                Reports
+                            </li>
+                            <li>
+                                Resource Management
+                            </li>
+                            <li>
+                                Multiple roles
+                            </li>
+                        </ol>
+                    </div>
             </section>
             <section>
                 <div>
@@ -206,22 +208,16 @@
                 </div>
                     <form>
                         <div>
-                            <label>
-                                Name
-                            </label>
-                            <input type="text" name="name">
+                            <input type="text" name="name" placeholder="Name">
                         </div>
                         <div>
-                            <label>
-                                Email
-                            </label>
-                            <input type="text" name="email">
+                            <input type="text" name="email" placeholder="Email">
                         </div>
                         <div>
-                            <label>
-                                Resource area
-                            </label>
                             <select name="resource-area">
+                                <option value="placeholder">
+                                    Resource area
+                                </option>
                                 <option value="a">
                                     A
                                 </option>
@@ -234,9 +230,6 @@
                             </select>
                         </div>
                         <div>
-                            <label>
-                                Message
-                            </label>
                             <textarea name="message">
                             </textarea>
                         </div>
@@ -246,10 +239,10 @@
                     </form>
             </section>
             <section>
-                <div>
-                    <h3>
-                        Title
-                    </h3>
+                <h3>
+                    Title
+                </h3>
+                <div class="box-text-right-bigimage">
                     <img src="assets/icon-todo-list.svg" alt="To do list icon">
                     <ul>
                         <li>
@@ -268,37 +261,42 @@
                 </div>
             </section>
             <section>
-                <div>
-                    <h3>
-                        Lists
-                    </h3>
-                    <ol>
-                        <li>
-                            Lorem ipsum dolor sit.
-                        </li>
-                        <li>
-                            Lorem, ipsum dolor.
-                        </li>
-                        <li>
-                            Lorem ipsum dolor sit amet.
-                        </li>
-                    </ol>
-                </div>
-                <div>
-                    <p>
-                        Unordered list
-                    </p>
-                    <ul>
-                        <li>
-                            Lorem ipsum dolor sit.
-                        </li>
-                        <li>
-                            Lorem, ipsum dolor.
-                        </li>
-                        <li>
-                            Lorem ipsum dolor sit amet.
-                        </li>
-                    </ul>
+                <h3>
+                    Lists
+                </h3>
+                <div id="list-section">
+                    <div>
+                        <h4>
+                            Ordered list
+                        </h4>
+                        <ol>
+                            <li>
+                                Lorem ipsum dolor sit.
+                            </li>
+                            <li>
+                                Lorem, ipsum dolor.
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h4>
+                            Unordered list
+                        </h4>
+                        <ul>
+                            <li>
+                                Lorem ipsum dolor sit.
+                            </li>
+                            <li>
+                                Lorem, ipsum dolor.
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <footer>
@@ -309,7 +307,7 @@
                         </cite>
                     </p>
                 </div>
-                <div>
+                <div id="social-media-icons">
                     <a href="https://facebook.com">
                         <img src="assets/icon-facebook.svg" alt="Facebook icon">
                     </a>

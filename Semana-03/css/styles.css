@@ -3,6 +3,14 @@ body{
     font-family: 'Roboto', Arial, sans-serif;
 }
 
+ol{
+    list-style-type: decimal;
+}
+
+ul{
+    list-style-type: circle;
+}
+
 header{
     
     background-color:#373867;
@@ -45,7 +53,8 @@ aside h2{
 
 nav a{
     display: list-item;
-    padding: 10px 5px;
+    padding: 15px 5px;
+    font-size: 18px;
 
 }
 
@@ -69,8 +78,8 @@ main{
 }
 
 main h2{
-    /*width: 100%;*/
-    /*display: inline;*/
+    width: 90%;
+    float: left;
     font-size: 32px;
     text-decoration: underline;
     text-align: center;
@@ -92,7 +101,7 @@ section{
     margin: 10px 5px;
     border-color: #373867;
     border-width: 10px;
-    border: 1px solid;
+    border-top: 1px solid;
     padding: 10px 10px;
     float: left;
     width: 99%;
@@ -102,7 +111,7 @@ section{
 section h3{
     font-size: 24px bold;
     text-align: center;
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
 
 article, footer{
@@ -110,11 +119,19 @@ article, footer{
     float: left;
 }
 
-button{
+button, input[type="submit"]{
     margin-top: 5px;
     clear: both;
     display: block;
     float: right;
+    background-color: #3738671b;
+    border: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #37386754;
+    width: 80px;
+    height: 33px;
+    border-radius: 5px;
 }
 
 .box-text-below {
@@ -147,7 +164,7 @@ button{
 }
 
 .box-text-right h3, p{
-    
+    height: auto;
 }
 
 .box-text-right img {
@@ -156,47 +173,56 @@ button{
     float: left;  
 }
 
+.box-text-right button{
+    margin-top: 120px;
+}
 
 
 
 
 
 
-.box-text-left{
+.box-text-left-bigimage{
     width: 100%;
     margin: 0px 10px;
     box-sizing: border-box;
 }
 
-.box-text-left h3, p{
+.box-text-left-bigimage p{
     float: left;
+    display: inline;
+    width: 40%;
 }
 
-.box-text-left img {
-    max-width: 60%;  
+.box-text-left-bigimage img {
+    max-width: 55%;  
+    box-sizing: border-box;
     height: auto;
-     
+    float: right;
+    margin: 0px 5px;
 }
 
 
 
 
 
-.box-text{
+.inline-box-text{
     display: flex;
     width: 45%;
     margin: 0px 10px;
     box-sizing: border-box;
-    /*display: inline-block;*/
+    display: inline-block;
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.box-text h3, p{
-    
+.inline-box-text h4, p{
+    float: right;
+    width: 55%;
+    margin-bottom: 15px
 }
 
-.box-text img {
+.inline-box-text img {
     max-width: 40%;  
     height: auto;
     float: left;  
@@ -205,9 +231,66 @@ button{
 
 
 
+.box-text-right-bigimage{
+    width: 100%;
+    margin: 0px 10px;
+    box-sizing: border-box;
+}
+
+
+.box-text-right-bigimage li{  
+    /*position: relative; 
+    top: 50%; 
+    transform: translateY(-50%);*/
+    float: right;
+    width: 40%;
+    font-size: 20px; 
+    margin-bottom: 15px;
+}
+
+.box-text-right-bigimage img {
+    max-width: 55%;  
+    box-sizing: border-box;
+    height: auto;
+    float: left;
+    margin: 0px 5px;
+}
+
+
+
+
+
+
+
+
+
+
 form input[type="text"], form textarea, form select{
     padding: 8px;
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 5px;
 }
 
+
+#list-section{
+    width: 80%;
+    margin: auto;
+    column-count: 2;
+    margin-bottom: 20px;
+}
+
+footer{
+    width: 100%;
+    float: left;
+}
+
+footer cite{
+    text-align: center;
+}
+
+#social-media-icons{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
