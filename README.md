@@ -16,9 +16,9 @@ Figma page design development. Responsible for super-admin section.
 ### Week 2
 HTML development for team's landing page. Included all assets from Figma design.
 ### Week 3
-CSS development for previous week's HTML. 
+CSS development for previous week's HTML.
 ### Week 4
-CSS improvements for flexbox properties usage & responsive design. 
+CSS improvements with flexbox properties usage & responsive design.
 
 
 

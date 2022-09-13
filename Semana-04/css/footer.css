@@ -2,13 +2,7 @@ footer {
     width: 100%;
     float: left;
     text-align: center;
-}
-
-#list-section {
-    width: 70%;
-    margin: auto;
-    column-count: 2;
-    margin-bottom: 20px;
+    background-color: #D9D9D9;
 }
 
 #social-media-icons {
