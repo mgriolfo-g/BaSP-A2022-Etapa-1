@@ -1,0 +1,30 @@
+aside {
+    position: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    height: calc(100% - 75px);
+    margin-top: 75px;
+    padding-top: 20px;
+    background-color:#c4c4c4;
+    z-index: 2;
+}
+
+aside h2 {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-color: #373867;
+    border-top: 1px solid;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+aside img {
+    height: 20px;
+    width: 20px;
+}
+
+aside input {
+    padding: 3px;
+    max-width: 60%;
+    background-color:#c4c4c4;
+}

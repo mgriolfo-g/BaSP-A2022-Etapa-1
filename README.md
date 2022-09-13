@@ -1,5 +1,6 @@
 # BaSP-A2022-Etapa-1
 Files related to 2022 Radium Rocket's 'Become a Software Developer' course.
+Author: Riolfo, M.
 
 ## Usage
 For execution, the following steps have to be followed:
@@ -15,7 +16,10 @@ Figma page design development. Responsible for super-admin section.
 ### Week 2
 HTML development for team's landing page. Included all assets from Figma design.
 ### Week 3
-CSS development for previous week's HTML. No flexbox allowed.
+CSS development for previous week's HTML. 
+### Week 4
+CSS improvements for flexbox properties usage & responsive design. 
+
 
 
 Open to further edits in the future. Thanks for visiting!

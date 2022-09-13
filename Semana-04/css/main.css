@@ -1,0 +1,49 @@
+main {
+    float: right;
+    height: calc(100% - 75px);
+    width: 80%;
+    padding-top: 20px;
+    margin-top: 75px;
+}
+
+main h2 {
+    float: left;
+    width: 90%;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+}
+
+main h3 {
+    margin: 5px 0px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+main h4 {
+    margin: 5px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main img {
+    border-radius: 10px;
+}
+
+section {
+    float: left;
+    flex-basis: 99%;
+    box-sizing: border-box;
+    margin: 10px 5px;
+    padding: 10px 10px;
+    border-color: #373867;
+    border-width: 10px;
+    border-top: 1px solid;
+}
+
+section h3 {
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 24px bold;
+}

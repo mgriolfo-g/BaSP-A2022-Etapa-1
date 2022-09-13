@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color:#373867;
+    z-index: 3;
+}
+
+header img{
+    max-width: 80px;
+}
+
+header h1 {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    color:#f0f0f0;
+    font-size: 36px;
+    font-weight: 700;
+
+}
