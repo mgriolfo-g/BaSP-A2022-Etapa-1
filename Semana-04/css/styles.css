@@ -64,8 +64,10 @@ form{
 }
 
 @media (min-width: 1280px) {
+
     #block-aside-main{
         display: flex;
         align-items: stretch;
     }
+
 }

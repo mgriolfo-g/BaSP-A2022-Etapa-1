@@ -1,6 +1,4 @@
 main h2 {
-    float: left;
-    width: 90%;
     font-size: 32px;
     font-weight: 700;
     text-decoration: underline;
@@ -286,20 +284,13 @@ section img {
         visibility: hidden;
     }
 
-    /*
     #showcase{
         flex-flow: row wrap;
         justify-content: flex-end;
     }
 
-    #showcase > div{
-        flex: 50%;
-    }
-    */
-
     .box-text-below {
         display: flex;
-        float: left;
         width: 60%;
         box-sizing: border-box;
         margin: 0px 10px;
@@ -322,6 +313,10 @@ section img {
         height: auto;
         max-width: 40%;
         padding-right: 5px;
+    }
+
+    .box-text-right:nth-child(2n) {
+        display: block;
     }
 
     .box-text-left-bigimage {
