@@ -22,7 +22,7 @@ main h4 {
 section {
     flex-basis: 99%;
     box-sizing: border-box;
-    margin: 10px 5px;
+    margin: 20px 5px;
     padding: 10px 10px;
     border-color: #373867;
     border-width: 10px;
@@ -97,7 +97,7 @@ section img {
 
 .inline-box-text {
     display: flex;
-    flex-basis: 95%;
+    width: 95%;
     flex-direction: column;
     flex-wrap: wrap-reverse;
     justify-content: center;
@@ -143,7 +143,19 @@ section img {
     margin: 15px 0px;
 }
 
+.big-item-sidetext {
+    display: flex;
+    flex-basis: 95%;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
 
+.big-item-sidetext img{
+    max-width: 100%;
+    padding: 10px;
+}
 
 
 
@@ -167,7 +179,106 @@ section img {
     #mobile-icons-left-arrow {
         display: inline;
     }
+
+    #mobile-icons {
+        flex-direction: row;
+    }
+
+    #showcase{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .box-text-below, .box-text-right{
+        width: 45%;
+        border-top: 0px solid;
+    }
+
+    #features{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inline-box-text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-basis: 45%;
+    }
+
+    .features-sidetext{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .inline-box-text h4, .inline-box-text p {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    .box-text-right-bigimage {
+        flex-direction: row;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        margin: 0px 10px;
+    }
+
+    .box-text-right-bigimage img {
+        height: 400px;
+        padding-right: 20px;
+    }
+
+    #big-items{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .big-item-sidetext{
+        flex-basis: 45%;
+        padding: 20px;
+    }
+
+    .big-item-sidetext img{
+        height: 100px;
+        padding: 10px;
+    }
+
+    #list-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px 0px;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 1280px) {
 
@@ -242,7 +353,7 @@ section img {
 
     .inline-box-text {
         display: flex;
-        flex-basis: 95%;
+        width: 95%;
         margin: 20px 10px;
         padding-bottom: 10px;
         box-sizing: border-box;
