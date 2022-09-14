@@ -27,7 +27,6 @@ input, textarea, select {
 }
 
 button, input[type="submit"] {
-    display: block;
     float: right;
     width: 80px;
     height: 35px;
@@ -42,7 +41,7 @@ button, input[type="submit"] {
 
 nav a {
     display: list-item;
-    padding: 15px 5px;
+    padding: 15px 10px;
     font-size: 18px;
 }
 
@@ -65,5 +64,8 @@ form{
 }
 
 @media (min-width: 1280px) {
-
+    #block-aside-main{
+        display: flex;
+        align-items: stretch;
+    }
 }
