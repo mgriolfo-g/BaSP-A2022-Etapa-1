@@ -76,7 +76,7 @@ section img {
 }
 
 .box-text-right img {
-    height: 200px;
+    max-height: 400px;
     max-width: 100%;
     padding-right: 5px;
 }
@@ -153,11 +153,6 @@ section img {
     max-width: 100%;
     padding: 10px;
 }
-
-
-
-
-
 
 
 @media only screen and (max-width: 480px) {
@@ -257,26 +252,6 @@ section img {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (min-width: 1280px) {
 
