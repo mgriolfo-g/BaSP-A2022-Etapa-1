@@ -1,13 +1,9 @@
 aside {
-    position: flex;
-    flex-wrap: wrap;
-    width: 20%;
-    padding-top: 20px;
-    background-color:#c4c4c4;
-    z-index: 2;
+    display: none;
 }
 
 aside h2 {
+    display: flex;
     margin-top: 10px;
     padding-top: 10px;
     padding-left: 10px;
@@ -29,7 +25,7 @@ aside input {
     background-color:#c4c4c4;
 }
 
-#sidebar-top{
+#sidebar-top {
     display: flex;
     align-self: center;
 }
@@ -41,29 +37,4 @@ aside input {
 
 .contact-item img {
     padding-right: 5px;
-}
-
-
-@media (max-width: 480px) {
-    aside {
-        display: none;
-    }
-}
-
-@media (min-width: 480px) {
-    aside {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    aside {
-        display: none;
-    }
-}
-
-@media (min-width: 1280px) {
-    aside {
-        display: inline;
-    }
 }

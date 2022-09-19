@@ -37,19 +37,19 @@ section img {
     border-radius: 10px;
 }
 
-#title-bar{
+#title-bar {
     padding: 20px 20px;
     display: flex;
     justify-content: space-between;
 }
 
-#title-bar img{
+#title-bar img {
     height: 25px;
     width: auto;
     margin: 5px;
 }
 
-#mobile-icons{
+#mobile-icons {
     display: flex;
     flex-direction: column;
 }
@@ -81,6 +81,10 @@ section img {
     padding-right: 5px;
 }
 
+#showcase-tablet {
+    display: none;
+}
+
 .box-text-left-bigimage {
     display: flex;
     flex-direction: column-reverse;
@@ -90,7 +94,7 @@ section img {
 .box-text-left-bigimage img {
     max-width: 100%;
     height: auto;
-    margin: 10px 0px;
+    margin: 15px 0px;
 }
 
 .inline-box-text {
@@ -133,7 +137,7 @@ section img {
     margin: 0px 5px;
 }
 
-.list{
+.list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -145,183 +149,11 @@ section img {
     display: flex;
     flex-basis: 95%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
-.big-item-sidetext img{
+.big-item-sidetext img {
     max-width: 100%;
     padding: 10px;
-}
-
-
-@media only screen and (max-width: 480px) {
-    #mobile-icons-left-arrow {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 480px) {
-    #mobile-icons-left-arrow {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    #mobile-icons-left-arrow {
-        display: inline;
-    }
-
-    #mobile-icons {
-        flex-direction: row;
-    }
-
-    #showcase{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .box-text-below, .box-text-right{
-        width: 45%;
-        border-top: 0px solid;
-    }
-
-    #features{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .inline-box-text{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-basis: 45%;
-    }
-
-    .features-sidetext{
-        display: flex;
-        flex-direction: column;
-        padding-left: 20px;
-        text-align: left;
-        width: 40%;
-    }
-
-    .inline-box-text h4, .inline-box-text p {
-        display: flex;
-        margin-bottom: 15px;
-    }
-
-    .box-text-right-bigimage {
-        flex-direction: row;
-        justify-content: space-evenly;
-        box-sizing: border-box;
-        margin: 0px 10px;
-    }
-
-    .box-text-right-bigimage img {
-        height: 400px;
-        padding-right: 20px;
-    }
-
-    #big-items{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .big-item-sidetext{
-        flex-basis: 45%;
-        padding: 20px;
-    }
-
-    .big-item-sidetext img{
-        height: 100px;
-        padding: 20px;
-    }
-
-    #list-block{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin: 15px 0px;
-    }
-
-}
-
-@media only screen and (min-width: 1280px) {
-
-    #mobile-icons{
-        visibility: hidden;
-    }
-
-    #showcase{
-        flex-flow: row wrap;
-        justify-content: flex-end;
-    }
-
-    .box-text-below {
-        display: flex;
-        width: 60%;
-        box-sizing: border-box;
-        margin: 0px 10px;
-    }
-
-    .box-text-right {
-        display: flex;
-        flex-direction: row;
-        width: 35%;
-        box-sizing: border-box;
-        margin: 10px;
-        padding-bottom: 10px;
-        border-color: #373867;
-        border-bottom: 1px solid;
-        height:50%;
-    }
-
-    .box-text-right img {
-        float: left;
-        height: auto;
-        max-width: 40%;
-        padding-right: 5px;
-    }
-
-    .box-text-right:nth-child(2n) {
-        display: block;
-    }
-
-    .box-text-left-bigimage {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-self: center;
-        margin: 0px 10px;
-    }
-
-    .box-text-left-bigimage img {
-        height: auto;
-        max-width: 60%;
-        margin: 0px 10px;
-    }
-
-    .box-text-left-bigimage p {
-        max-width: 30%;
-        margin: 0px 10px;
-        line-height: 1.5;
-    }
-
-    .big-item-sidetext {
-        flex-direction: row;
-        flex-basis: 95%;
-        align-items: center;
-    }
-
-    .big-item-sidetext img {
-        padding-right: 40px;
-    }
-
 }
