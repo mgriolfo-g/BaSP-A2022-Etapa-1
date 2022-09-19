@@ -1,8 +1,7 @@
 // 4. If Else
 
 // Script start declaration on console
-console.log('-----Script start: 04_if_else.js-----');
-
+console.log('**********Script start: 04_if_else.js**********');
 
 
 // a. Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el valor es mayor o igual que 0,5

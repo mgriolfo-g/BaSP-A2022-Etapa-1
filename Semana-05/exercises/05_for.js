@@ -1,7 +1,8 @@
 //5.For
 
 // Script start declaration on console
-console.log('-----Script start: 05_for.js-----');
+console.log('**********Script start: 05_for.js**********');
+
 
 // a. Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para 
 // mostrar una alerta utilizando cada una de las palabras.

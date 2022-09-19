@@ -1,8 +1,7 @@
 // 2.Strings
 
 // Script start declaration on console
-console.log('-----Script start: 02_strings.js-----');
-
+console.log('**********Script start: 02_strings.js**********');
 
 
 // a. Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula (utilizar

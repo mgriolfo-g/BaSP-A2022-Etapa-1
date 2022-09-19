@@ -1,7 +1,7 @@
 // 3. Arrays
 
 // Script start declaration on console
-console.log('-----Script start: 03_arrays.js-----');
+console.log('**********Script start: 03_arrays.js**********');
 
 
 // a. Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
