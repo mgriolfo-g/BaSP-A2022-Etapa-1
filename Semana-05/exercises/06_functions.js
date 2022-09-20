@@ -46,7 +46,7 @@ console.log('-Subtask 6d:');
 
 
 
-// e. Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función suma 
+// e. Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función suma
 // probando que todo siga funcionando igual.
 
 // Subtask start declaration on console

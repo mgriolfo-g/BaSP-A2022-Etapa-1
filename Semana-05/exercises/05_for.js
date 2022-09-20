@@ -4,22 +4,35 @@
 console.log('**********Script start: 05_for.js**********');
 
 
-// a. Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para 
+// a. Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para
 // mostrar una alerta utilizando cada una de las palabras.
 
 // Subtask start declaration on console
 console.log('-Subtask 5a:');
 
+var arrWord = ['first','second','third','fourth','fifth'];
+
+// Subtask results print on console & alert
+for (var i = 0; i < arrWord.length; i++) {
+    alert(arrWord[i]);
+    console.log(arrWord[i]);
+}
 
 
-
-// b. Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada 
+// b. Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada
 // palabra modificada.
 
 // Subtask start declaration on console
 console.log('-Subtask 5b:');
 
+var arrWordFirstUpper = [];
 
+// Subtask results print on console & alert
+for (var i = 0; i < arrWord.length; i++) {
+    arrWordFirstUpper[i] = arrWord[i].substring(0,1).toUpperCase() + arrWord[i].substring(1).toLowerCase();
+    alert(arrWordFirstUpper[i]);
+    console.log(arrWordFirstUpper[i]);
+}
 
 
 /*
@@ -31,7 +44,15 @@ console.log('-Subtask 5b:');
 // Subtask start declaration on console
 console.log('-Subtask 5c:');
 
+var sentence = '';
 
+for (var i = 0; i < arrWord.length; i++) {
+    sentence += arrWord[i] + ' ';
+}
+
+// Subtask results print on console & alert
+alert(sentence);
+console.log(sentence);
 
 
 /*
@@ -43,5 +64,11 @@ console.log('-Subtask 5c:');
 // Subtask start declaration on console
 console.log('-Subtask 5d:');
 
+var arrNum = [];
 
+for (var i = 0; i < 10; i++) {
+    arrNum.push(i);
+}
 
+// Subtask results print on console
+console.log(arrNum);
