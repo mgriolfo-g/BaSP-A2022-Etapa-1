@@ -10,7 +10,17 @@ console.log('**********Script start: 04_if_else.js**********');
 // Subtask start declaration on console
 console.log('-Subtask 4a:');
 
+var rndNum = Math.random();
 
+// Subtask results print on console & alert
+if (rndNum >= 0.5) {
+    alert('Greater than 0.5');
+    console.log('Random number: ' + rndNum + ' - Greater than 0.5');
+}
+else {
+    alert('Lower than 0.5');
+    console.log('Random number: ' + rndNum + ' - Lower than 0.5');
+}
 
 
 /*
@@ -27,5 +37,35 @@ console.log('-Subtask 4a:');
 // Subtask start declaration on console
 console.log('-Subtask 4b:');
 
+var age = Math.floor(rndNum*100);
 
+// Subtask results print on console & alert
+if (age <= 2) {
+    alert('Bebe');
+    console.log('Edad: ' + age + ' - Bebe');
+}
+else if (age > 2 && age <= 12) {
+    alert('Niño');
+    console.log('Edad: ' + age + ' - Niño');
+}
+else if (age > 12 && age <= 19) {
+    alert('Adolescente');
+    console.log('Edad: ' + age + ' - Adolescente');
+}
+else if (age > 19 && age <= 30) {
+    alert('Joven');
+    console.log('Edad: ' + age + ' - Joven');
+}
+else if (age > 30 && age <= 60) {
+    alert('Adulto');
+    console.log('Edad: ' + age + ' - Adulto');
+}
+else if (age > 60 && age <= 75) {
+    alert('Adulto Mayor');
+    console.log('Edad: ' + age + ' - Adulto mayor');
+}
+else if (age > 75) {
+    alert('Anciano');
+    console.log('Edad: ' + age + ' - Anciano');
+}
 
