@@ -16,15 +16,24 @@ New content will be developed and pushed weekly. A brief explanation of each wee
 Figma page design development. Responsible for admin section.
 ### Week 2
 HTML development for team's landing page. Included all assets from Figma design.
-### Week 3
+### [Week 3]
 CSS development for previous week's HTML.
-### Week 4
+### [Week 4]
 CSS improvements with flexbox properties usage & responsive design.
-### Week 5
+### [Week 5]
 JavaScript ES5 basic capability test files.
+### [Week 6]
+Login & Signup pages creation. DOM configuration.
 
 
+![Landing (Desktop) crop](<https://mgriolfo-g.github.io/BaSP-A2022-Etapa-1/landing-desktop-crop.png> "Landing (Desktop) crop")
 
 Open to further edits in the future. Thanks for visiting!
 
 ### Author: Riolfo, M.
+
+
+[Week 3]: <https://mgriolfo-g.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html>
+[Week 4]: <https://mgriolfo-g.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html>
+[Week 5]: <https://mgriolfo-g.github.io/BaSP-A2022-Etapa-1/Semana-05/index.html>
+[Week 6]: <https://mgriolfo-g.github.io/BaSP-A2022-Etapa-1/Semana-06/views/index.html>

@@ -74,10 +74,12 @@ function addNum3(num8,num9) {
     if (validateInteger(num8) == false) {
         alert('addNum3 function alert: ' + num8 + ' is not an integer. Rounding to proceed');
         num8 = Math.round(num8);
+        return num8 + num9;
     }
     if (validateInteger(num9) == false) {
         alert('addNum3 function alert: ' + num9 + ' is not an integer. Rounding to proceed');
         num9 = Math.round(num9);
+        return num8 + num9;
     }
 
     return num8 + num9;
@@ -100,8 +102,8 @@ function roundNum(num) {
     if (validateInteger(num) == false) {
         alert('roundNum function alert: ' + num + ' is not an integer. Rounding to proceed');
         num = Math.round(num);
+        return num;
     }
-    return num;
 }
 
 function addNum4(num10,num11) {
