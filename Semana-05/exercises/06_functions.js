@@ -32,7 +32,7 @@ console.log('-Subtask 6b:');
 function addNum2(num5,num6) {
     if ( isNaN(num5) || isNaN(num6) ) {
         alert('addNum2 function exception: not a number parameter')
-        return 'Error';
+        return NaN;
     }
     return num5 + num6;
 }
@@ -69,7 +69,7 @@ console.log('-Subtask 6d:');
 function addNum3(num8,num9) {
     if ( isNaN(num8) || isNaN(num9) ) {
         alert('addNum3 function exception: not a number parameter');
-        return 'Error';
+        return NaN;
     }
     if (validateInteger(num8) == false) {
         alert('addNum3 function alert: ' + num8 + ' is not an integer. Rounding to proceed');
@@ -107,7 +107,7 @@ function roundNum(num) {
 function addNum4(num10,num11) {
     if ( isNaN(num10) || isNaN(num11) ) {
         alert('addNum4 function exception: not a number parameter');
-        return 'Error';
+        return NaN;
     }
     num10 = roundNum(num10);
     num11 = roundNum(num11);

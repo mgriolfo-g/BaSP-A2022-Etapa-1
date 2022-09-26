@@ -4,14 +4,14 @@
 console.log('**********Script start: 03_arrays.js**********');
 
 
-// a. Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
-// "Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses 5 y 11 (utilizar console.log).
+// a. Dado el siguiente array: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto',
+// 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'] mostrar por consola los meses 5 y 11 (utilizar console.log).
 
 // Subtask start declaration on console
 console.log('-Subtask 3a:');
 
-var arrMonth = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
-    "Noviembre", "Diciembre"];
+var arrMonth = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
+    'Noviembre', 'Diciembre'];
 
 // Subtask results print on console
 console.log('El mes 5 es ' + arrMonth[4] + ' y el mes 11 es ' + arrMonth[10] + '!');
@@ -77,8 +77,8 @@ console.log(strArrMonth);
 // Subtask start declaration on console
 console.log('-Subtask 3g:');
 
-var arrMonth2 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
-    "Noviembre", "Diciembre"];
+var arrMonth2 = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
+    'Noviembre', 'Diciembre'];
 
 var arrMonth5to11 = arrMonth2.slice(4,11);
 

@@ -1,0 +1,159 @@
+main h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+}
+
+main h3 {
+    margin: 5px 0px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+main h4 {
+    margin: 5px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section {
+    flex-basis: 99%;
+    box-sizing: border-box;
+    margin: 20px 5px;
+    padding: 10px 10px;
+    border-color: #373867;
+    border-width: 10px;
+    border-top: 1px solid;
+}
+
+section h3 {
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 24px bold;
+}
+
+section img {
+    border-radius: 10px;
+}
+
+#title-bar {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#title-bar img {
+    height: 25px;
+    width: auto;
+    margin: 5px;
+}
+
+#mobile-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-text-below {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+
+.box-text-below img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box-text-right {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 10px;
+    padding-top: 10px;
+    border-color: #373867;
+    border-top: 1px solid;
+}
+
+.box-text-right img {
+    max-height: 400px;
+    max-width: 100%;
+    padding-right: 5px;
+}
+
+#showcase-tablet {
+    display: none;
+}
+
+.box-text-left-bigimage {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px 10px;
+}
+
+.box-text-left-bigimage img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0px;
+}
+
+.inline-box-text {
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin: 20px 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.inline-box-text h4, .inline-box-text p {
+    margin: 15px 0;
+}
+
+.inline-box-text img {
+    max-height: 200px;
+}
+
+.box-text-right-bigimage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0px 10px;
+}
+
+.box-text-right-bigimage li {
+    margin: 20px 15px;
+    font-size: 20px;
+}
+
+.box-text-right-bigimage img {
+    height: 200px;
+    width: auto;
+    box-sizing: border-box;
+    margin: 0px 5px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.big-item-sidetext {
+    display: flex;
+    flex-basis: 95%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.big-item-sidetext img {
+    max-width: 100%;
+    padding: 10px;
+}

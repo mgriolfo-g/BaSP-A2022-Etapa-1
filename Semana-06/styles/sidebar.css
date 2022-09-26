@@ -1,0 +1,40 @@
+aside {
+    display: none;
+}
+
+aside h2 {
+    display: flex;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-color: #373867;
+    border-top: 1px solid;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+aside img {
+    padding: 6px;
+    height: 20px;
+    width: 20px;
+}
+
+aside input {
+    padding: 3px;
+    max-width: 60%;
+    background-color:#c4c4c4;
+}
+
+#sidebar-top {
+    display: flex;
+    align-self: center;
+}
+
+.contact-item {
+    display: flex;
+    margin: 10px;
+}
+
+.contact-item img {
+    padding-right: 5px;
+}

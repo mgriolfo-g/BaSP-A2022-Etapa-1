@@ -25,13 +25,11 @@ for (var i = 0; i < arrWord.length; i++) {
 // Subtask start declaration on console
 console.log('-Subtask 5b:');
 
-var arrWordFirstUpper = [];
 
 // Subtask results print on console & alert
 for (var i = 0; i < arrWord.length; i++) {
-    arrWordFirstUpper[i] = arrWord[i].substring(0,1).toUpperCase() + arrWord[i].substring(1).toLowerCase();
-    alert(arrWordFirstUpper[i]);
-    console.log(arrWordFirstUpper[i]);
+    arrWord[i] = arrWord[i].substring(0,1).toUpperCase() + arrWord[i].substring(1).toLowerCase();
+    alert(arrWord[i]);
 }
 
 
@@ -52,7 +50,6 @@ for (var i = 0; i < arrWord.length; i++) {
 
 // Subtask results print on console & alert
 alert(sentence);
-console.log(sentence);
 
 
 /*
