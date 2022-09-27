@@ -31,10 +31,6 @@ main {
     align-items: stretch;
 }
 
-#login-button {
-    justify-content: center;
-}
-
 #show-pass-check {
     display: flex;
     padding: 10px;
