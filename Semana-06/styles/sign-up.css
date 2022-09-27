@@ -1,0 +1,68 @@
+
+section {
+    flex-basis: 99%;
+    box-sizing: border-box;
+    margin: 20px 5px;
+    padding: 10px 10px;
+    border-color: #373867;
+    border-width: 10px;
+}
+
+#signup {
+    display: flex;
+    flex-direction: column;
+}
+
+#signup h2 {
+    justify-self: center;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#signup p {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+main {
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+#show-pass-check {
+    display: flex;
+    padding: 10px;
+}
+
+#show-pass-check input {
+    width: 10%;
+}
+
+form * {
+    margin: 3px 0;
+}
+
+#form-footer a {
+    padding-left: 40px;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-around;
+        padding: 50px 50px 10px 50px;
+    }
+
+    .form-item {
+        width: 45%;
+    }
+
+}
+
