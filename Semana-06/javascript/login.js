@@ -1,6 +1,6 @@
 window.onload = function() {
     var emailBox = document.getElementById('email-box');
-    var passwordBox = document.getElementById('password-box')
+    var passwordBox = document.getElementById('password-box');
 
     var email = document.getElementById('email');
     var password = document.getElementById('password');
@@ -24,20 +24,17 @@ window.onload = function() {
             var strUpper = string[i].toUpperCase();
             var strLower = string[i].toLowerCase();
             if (strLower == strUpper){
-                if (string[i] == " "){
-                    continue;
-                }
                 return false;
-            };
-        };
+            }
+        }
         return true;
-    };
+    }
 
     function checkLength(string,leng) { 	// Check if a string has a certain length (leng)
         if (string.length < leng) {
-            return false
+            return false;
         } else {
-            return true
+            return true;
         }
     }
 
@@ -56,8 +53,8 @@ window.onload = function() {
             } else {
                 hasOther = true;
                 break;
-            };
-        };
+            }
+        }
 
         if (hasNum == true && hasLetter == true && hasOther == false){
             return true;
@@ -112,7 +109,7 @@ window.onload = function() {
         if (validateEmail()) {
             return null;
         } else {
-            insertInvalidInput(emailBox,'Invalid Email')
+            insertInvalidInput(emailBox,'Invalid Email');
             return null;
         }
     }
@@ -143,17 +140,17 @@ window.onload = function() {
         var errFields = [];
 
         if(!validateEmail()) {
-            errFields.push('Email')
+            errFields.push('Email');
         }
 
         if (!validatePassword()) {
-            errFields.push('Password')
+            errFields.push('Password');
         }
 
         if(errFields.length !== 0) {
-            alert('Errores: ' + errFields.join(', '))
+            alert('Errores: ' + errFields.join(', '));
         } else {
-            alert('Exito.\nEmail: ' + email.value + '\nPassword: ' + password.value)
+            alert('Exito.\nEmail: ' + email.value + '\nPassword: ' + password.value);
         }
     }
 
