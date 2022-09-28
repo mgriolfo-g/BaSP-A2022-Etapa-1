@@ -423,7 +423,7 @@ window.onload = function() {
         } else {
             alert('Exito.\nName: ' + name.value + '\nSurname: ' + surname.value + '\nDNI: ' + dni.value +
                 '\nBirthday: ' + birthday.value + '\nPhone: ' + phone.value + '\nAddress: ' + address.value +
-                '\nCity:' + city.value + '\nPostal Code:' + postalCode.value + '\nEmail: ' + email.value +
+                '\nCity: ' + city.value + '\nPostal Code: ' + postalCode.value + '\nEmail: ' + email.value +
                 '\nPassword: ' + password.value + '\nConfirmed password: ' + confirmPassword.value);
         }
     }
