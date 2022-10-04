@@ -24,6 +24,19 @@ window.onload = function() {
     var confirmPassword = document.getElementById('confirm-password');
 
     var submit = document.getElementById('submit-button');
+    var signUpURL = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
+
+    name.setAttribute('value', localStorage.getItem('name-ls'));
+    surname.setAttribute('value', localStorage.getItem('lastname-ls'));
+    dni.setAttribute('value', localStorage.getItem('dni-ls'));
+    birthday.setAttribute('value', localStorage.getItem('dob-ls'));
+    phone.setAttribute('value', localStorage.getItem('phone-ls'));
+    address.setAttribute('value', localStorage.getItem('address-ls'));
+    city.setAttribute('value', localStorage.getItem('city-ls'));
+    postalCode.setAttribute('value', localStorage.getItem('zip-ls'));
+    email.setAttribute('value', localStorage.getItem('email-ls'));
+    password.setAttribute('value', localStorage.getItem('password-ls'));
+    confirmPassword.setAttribute('value', localStorage.getItem('password-ls'));
 
     // Internal check functions
 
@@ -99,10 +112,20 @@ window.onload = function() {
         return false;
     }
 
+    function formatDateMMDDYYYY(inputDate) {
+        var date = new Date(inputDate);
+        if (!isNaN(date.getTime())) {
+            var day = (date.getDate() + 1).toString();
+            var month = (date.getMonth() + 1).toString();
+            // Months use 0 index.
+            return (month[1] ? month: '0' + month[0]) + '/' + (day[1] ? day : '0' + day[0]) + '/' + date.getFullYear();
+        }
+    }
+
     // Field validation functions
 
     function validateName() {
-        if (!(name.value.length > 3)) {
+        if (!(name.value.length > 2)) {
             return false;
         }  else if (!checkIfLetter(name.value)) {
             return false;
@@ -112,7 +135,7 @@ window.onload = function() {
     }
 
     function validateSurname() {
-        if(!(surname.value.length > 3)) {
+        if(!(surname.value.length > 2)) {
             return false;
         }  else if (!checkIfLetter(surname.value)) {
             return false;
@@ -132,7 +155,7 @@ window.onload = function() {
     }
 
     function validateDni() {
-        if(!(dni.value.length > 10) ) {
+        if(!(dni.value.length > 6) ) {
             return false;
         } else {
             return true;
@@ -189,7 +212,7 @@ window.onload = function() {
     }
 
     function validatePassword() {
-        if(!(password.value.length > 8) ) {
+        if(!(password.value.length > 7) ) {
             return false;
         }  else if (!checkIfLetNum(password.value)) {
             return false;
@@ -199,7 +222,7 @@ window.onload = function() {
     }
 
     function validateConfirmPassword() {
-        if(!(password.value.length > 8) ) {
+        if(!(password.value.length > 7) ) {
             return false;
         }  else if (!checkIfLetNum(password.value)) {
             return false;
@@ -439,10 +462,46 @@ window.onload = function() {
         if(errFields.length !== 0) {
             alert('Errores: \n' + errFields.join('\n'));
         } else {
-            alert('Exito.\nName: ' + name.value + '\nSurname: ' + surname.value + '\nDNI: ' + dni.value +
-                '\nBirth date: ' + birthday.value + '\nPhone: ' + phone.value + '\nAddress: ' + address.value +
-                '\nCity: ' + city.value + '\nPostal Code: ' + postalCode.value + '\nEmail: ' + email.value +
-                '\nPassword: ' + password.value + '\nConfirmed password: ' + confirmPassword.value);
+            var signUpURLWithQPs = signUpURL + "?name=" + name.value + "&lastName=" + surname.value +
+            "&dni=" + dni.value + "&dob=" +  formatDateMMDDYYYY(birthday.value)  + "&phone=" + phone.value +
+            "&address=" + address.value + "&city=" + city.value + "&zip=" + postalCode.value +
+            "&email=" + email.value + "&password=" + password.value;
+
+            fetch(signUpURLWithQPs)
+            .then( function(response) {
+                return response.json();
+            })
+            .then( function(data) {
+                console.log(data);
+                if (data.success == true) {
+                    alert( data.msg + '. Showing previously inserted data: ' + '\n' +
+                    'Name: ' + data.data.name + '\n' + 'Surname: ' + data.data.lastName + '\n'+
+                    'DNI: ' + data.data.dni + '\n' + 'Birthday: ' + data.data.dob + '\n' + 
+                    'Phone: ' + data.data.phone + '\n' + 'Address: ' + data.data.address + '\n' +
+                    'City: ' + data.data.city + '\n' + 'Postal Code: ' + data.data.zip + '\n' +
+                    'Email: ' + data.data.email + '\n' + 'Password: ' + data.data.password );
+                    // localStorage set
+                    window.localStorage.setItem("name-ls", data.data.name);
+                    window.localStorage.setItem("lastname-ls", data.data.lastName);
+                    window.localStorage.setItem("dni-ls", data.data.dni);
+                    window.localStorage.setItem("dob-ls", (new Date(data.data.dob).toISOString().split('T')[0]));
+                    window.localStorage.setItem("phone-ls", data.data.phone);
+                    window.localStorage.setItem("address-ls", data.data.address);
+                    window.localStorage.setItem("city-ls", data.data.city);
+                    window.localStorage.setItem("zip-ls", data.data.zip);
+                    window.localStorage.setItem("email-ls", data.data.email);
+                    window.localStorage.setItem("password-ls", data.data.password);
+                } else {
+                    var errArrStr = '';
+                    for (i = 0; i < data.errors.length; i++) {
+                        errArrStr += '\n' + data.errors[i].msg.toString();
+                    }
+                    throw new Error(errArrStr);
+                }
+            })
+            .catch( function(err) {
+                alert(err);
+            })
         }
     }
 
