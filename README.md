@@ -23,8 +23,9 @@ CSS improvements with flexbox properties usage & responsive design.
 ### [Week 5]
 JavaScript ES5 basic capability test files.
 ### [Week 6]
-Login & Signup pages creation. DOM configuration.
-
+Login & Signup pages creation. DOM configuration. Form validation on landing (contact form), login & signup pages.
+### [Week 7]
+Fetch functionalities for forms, API info validation & LocalStorage loading.
 
 ![Landing (Desktop) crop](<https://mgriolfo-g.github.io/BaSP-A2022-Etapa-1/landing-desktop-crop.png> "Landing (Desktop) crop")
 
@@ -37,3 +38,4 @@ Open to further edits in the future. Thanks for visiting!
 [Week 4]: <https://mgriolfo-g.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html>
 [Week 5]: <https://mgriolfo-g.github.io/BaSP-A2022-Etapa-1/Semana-05/index.html>
 [Week 6]: <https://mgriolfo-g.github.io/BaSP-A2022-Etapa-1/Semana-06/views/index.html>
+[Week 7]: <https://mgriolfo-g.github.io/BaSP-A2022-Etapa-1/Semana-07/views/index.html>
