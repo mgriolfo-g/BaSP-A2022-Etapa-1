@@ -69,9 +69,9 @@ form {
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s
-  }
+}
 
-  .modal-content {
+.modal-content {
     position: fixed;
     bottom: 0;
     background-color: #fefefe;
@@ -80,57 +80,59 @@ form {
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s
-  }
+}
 
-  /* The Close Button */
-  .close {
+/* Modal close button */
+.close {
     color: white;
     float: right;
     font-size: 18px;
     font-weight: bold;
-  }
+}
 
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
-  .modal-header {
+.modal-header {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
-  }
+}
 
-  .modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;
+}
 
-  .modal-footer {
+.modal-footer {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
-  }
+}
 
-  /* Add Animation */
-  @-webkit-keyframes slideIn {
-    from {bottom: -300px; opacity: 0} 
-    to {bottom: 0; opacity: 1}
-  }
-
-  @keyframes slideIn {
+/* Modal animation */
+@-webkit-keyframes slideIn {
     from {bottom: -300px; opacity: 0}
     to {bottom: 0; opacity: 1}
-  }
+}
 
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
-  }
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
 
-  @keyframes fadeIn {
-    from {opacity: 0} 
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
     to {opacity: 1}
-  }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
 
 
 @media only screen and (min-width: 768px) {
@@ -257,7 +259,7 @@ form {
         display: flex;
         align-items: stretch;
     }
-    
+
     #mobile-icons {
         visibility: hidden;
     }

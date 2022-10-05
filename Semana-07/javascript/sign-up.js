@@ -26,6 +26,20 @@ window.onload = function() {
     var submit = document.getElementById('submit-button');
     var signUpURL = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
 
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+    var modalBody = document.getElementsByClassName('modal-body')[0];
+
+    function modalPopUp(message){
+        modal.style.display='flex';
+        if (modalBody.firstChild != null) {
+            modalBody.removeChild(modalBody.firstChild);
+        }
+        var alertMsg = document.createElement('p');
+        alertMsg.innerText = message;
+        modalBody.append(alertMsg);
+    }
+
     if (localStorage.getItem('lastname-ls') != null) {
         name.setAttribute('value', localStorage.getItem('name-ls'));
         surname.setAttribute('value', localStorage.getItem('lastname-ls'));
@@ -411,6 +425,11 @@ window.onload = function() {
         return null;
     }
 
+    span.onclick = function() {     // CLose button on modal
+        modal.style.display = "none";
+        modalBody.removeChild(modalBody.firstChild);
+    }
+
     // Submit button function
 
     submit.onclick = function(e) {
@@ -476,12 +495,14 @@ window.onload = function() {
             .then( function(data) {
                 console.log(data);
                 if (data.success == true) {
-                    alert( data.msg + '. Showing previously inserted data: ' + '\n' +
+                    successMsg = data.msg + '. Showing previously inserted data: ' + '\n' +
                     'Name: ' + data.data.name + '\n' + 'Surname: ' + data.data.lastName + '\n'+
                     'DNI: ' + data.data.dni + '\n' + 'Birthday: ' + data.data.dob + '\n' + 
                     'Phone: ' + data.data.phone + '\n' + 'Address: ' + data.data.address + '\n' +
                     'City: ' + data.data.city + '\n' + 'Postal Code: ' + data.data.zip + '\n' +
-                    'Email: ' + data.data.email + '\n' + 'Password: ' + data.data.password );
+                    'Email: ' + data.data.email + '\n' + 'Password: ' + data.data.password;
+                    //alert(successMsg);
+                    modalPopUp(successMsg);
                     // localStorage set
                     window.localStorage.setItem("name-ls", data.data.name);
                     window.localStorage.setItem("lastname-ls", data.data.lastName);
@@ -502,7 +523,8 @@ window.onload = function() {
                 }
             })
             .catch( function(err) {
-                alert(err);
+                //alert(err);
+                modalPopUp(err);
             })
         }
     }
