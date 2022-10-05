@@ -9,27 +9,17 @@ window.onload = function() {
     var loginURL = "https://basp-m2022-api-rest-server.herokuapp.com/login";
 
     var modal = document.getElementById("myModal");
-
-    // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
+    var modalBody = document.getElementsByClassName('modal-body')[0];
 
-    var sidebarTop = document.getElementById("sidebar-top");
-
-    // When the user clicks the button, open the modal 
-    sidebarTop.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+    function modalPopUp(message){
+        modal.style.display='flex';
+        if (modalBody.firstChild != null) {
+            modalBody.removeChild(modalBody.firstChild);
         }
+        var alertMsg = document.createElement('p');
+        alertMsg.innerText = message;
+        modalBody.append(alertMsg);
     }
 
     // Internal check functions
@@ -146,6 +136,11 @@ window.onload = function() {
         return null;
     }
 
+    span.onclick = function() {     // CLose button on modal
+        modal.style.display = "none";
+        modalBody.removeChild(modalBody.firstChild);
+    }
+
     // Submit button function
 
     submit.onclick = function(e) {
@@ -170,13 +165,15 @@ window.onload = function() {
             })
             .then( function(data) {
                 if (data.success == true) {
-                    alert(data.msg)
+                    //alert(data.msg);
+                    modalPopUp(data.msg);
                 } else {
                     throw new Error(data.msg);
                 }
             })
             .catch( function(err) {
-                alert(err);
+                //alert(err);
+                modalPopUp(err);
             })
         }
     }
