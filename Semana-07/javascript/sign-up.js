@@ -26,17 +26,19 @@ window.onload = function() {
     var submit = document.getElementById('submit-button');
     var signUpURL = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
 
-    name.setAttribute('value', localStorage.getItem('name-ls'));
-    surname.setAttribute('value', localStorage.getItem('lastname-ls'));
-    dni.setAttribute('value', localStorage.getItem('dni-ls'));
-    birthday.setAttribute('value', localStorage.getItem('dob-ls'));
-    phone.setAttribute('value', localStorage.getItem('phone-ls'));
-    address.setAttribute('value', localStorage.getItem('address-ls'));
-    city.setAttribute('value', localStorage.getItem('city-ls'));
-    postalCode.setAttribute('value', localStorage.getItem('zip-ls'));
-    email.setAttribute('value', localStorage.getItem('email-ls'));
-    password.setAttribute('value', localStorage.getItem('password-ls'));
-    confirmPassword.setAttribute('value', localStorage.getItem('password-ls'));
+    if (localStorage.getItem('lastname-ls') != null) {
+        name.setAttribute('value', localStorage.getItem('name-ls'));
+        surname.setAttribute('value', localStorage.getItem('lastname-ls'));
+        dni.setAttribute('value', localStorage.getItem('dni-ls'));
+        birthday.setAttribute('value', localStorage.getItem('dob-ls'));
+        phone.setAttribute('value', localStorage.getItem('phone-ls'));
+        address.setAttribute('value', localStorage.getItem('address-ls'));
+        city.setAttribute('value', localStorage.getItem('city-ls'));
+        postalCode.setAttribute('value', localStorage.getItem('zip-ls'));
+        email.setAttribute('value', localStorage.getItem('email-ls'));
+        password.setAttribute('value', localStorage.getItem('password-ls'));
+        confirmPassword.setAttribute('value', localStorage.getItem('password-ls'));
+    }
 
     // Internal check functions
 
